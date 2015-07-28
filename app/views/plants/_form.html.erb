@@ -1,0 +1,30 @@
+<%= form_for(@plant) do |f| %>
+
+  <div class="field">
+    <%= f.label :plant_name %><br />
+    <%= f.text_field :plant_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :moisture_threshold %><br />
+    <%= f.number_field :moisture_threshold %>
+  </div>
+  <div class="field">
+    <%= f.label :temp_threshold %><br />
+    <%= f.number_field :temp_threshold %>
+  </div>
+  <div class="field">
+    <%= f.label :sensor_id %><br />
+    <%= f.number_field :sensor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
