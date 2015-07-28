@@ -1,7 +1,7 @@
 class PlantsController < ApplicationController
   
   def index
-    @plants = Plant.all 
+    @plants = current_user.plants
 
   end
   
@@ -19,6 +19,7 @@ class PlantsController < ApplicationController
 
   def create
     @plant = Plant.new(plant_params)
+    @plant.user = current_user
       if @plant.save
         redirect_to plants_url
       else

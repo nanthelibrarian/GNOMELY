@@ -7,6 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="nav">
+    <%= link_to "Home", login_path %> |
+    <% if current_user %>
+    <%= link_to "My Plants", plants_path %> |
+    <%= link_to "Logout", :logout, method: :post %> |
+    <% else %>
+    <%= link_to "Sign up", new_user_path %> |
+    <%= link_to "Log in", :login %>
+    <% end %>
+  </div>
+  <div>
+   <p id="notice"><%= flash[:notice] %></p>
+   <p id="alert"><%= flash[:alert] %></p>
+ </div>
 
 <%= yield %>
 
