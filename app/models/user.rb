@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 
   validates :email, uniqueness: true
   has_many :plants
+
+  def send_alert_email
+    UserMailer.send_alert(self).deliver_now
+  end
 end

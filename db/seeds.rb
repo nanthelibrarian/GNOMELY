@@ -31,7 +31,7 @@ end
 
 100.times do
   Plant.create(
-    plant_name: Faker::Lorem.word + "plant",
+    plant_name: Faker::Lorem.word,
     description: Faker::Lorem.sentence(10),
     notes: Faker::Lorem.sentences(3),
     moisture_threshold: Faker::Number.between(100, 400),
