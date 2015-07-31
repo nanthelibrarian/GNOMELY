@@ -1,37 +1,38 @@
 as a user, I am able to..
 
-iteration 1 - basic functioning rails app w faker data
+iteration 1 (COMPLETED)- basic functioning rails app w faker data
 
 login
 add a plant
 edit a plant
 delete a plant
 view all my plants
-track moisture level of a plant
-track temperature for soil
 set threshold for moisture
 set threshold for temperature
 get notification when plants need water
-get notification when temperature drops below a certain level
 make notes to plant pages (add comments)
 
 iteration 2 - getting data from sensors
-
-iteration 3 - API calls and additional data from sensors, search functionality
-
-have a picture of each added plant automatically uploaded via API 
+seed data for 20 or so plants with pictures 
 search for plants
-add pictures of my plants
-track sun levels for my plants
-track first and last frost dates
-get notification when first/last frost dates approaching
-planting/transplanting tips for my plants
-track harvest date
+get notification when moisture drops below a certain level
+add indoor/outdoor location to form 
+add ability to upload user plant pictures
+user profile page
 get email notification when plants need water
+
+iteration 3 - API calls and additional data from sensors
+integrate weather app api ?  other api?
+planting/transplanting tips for my plants
 get text notification when plants need water
+UI design
+
+--------- DEMO DAY
 
 iteration 4 - social + stretch functionality
 
+track moisture level of a plant
+track temperature for soil
 see my profile
 create gardening groups for community gardens
 connect with other users
@@ -45,7 +46,9 @@ buy/trade seeds/plants
 see pictures of plants from other users
 see suggested plants for my zone
 see/graph plant moisture/temp data over time
-
-
-
+track first and last frost dates
+get notification when first/last frost dates approaching
+track harvest date
+have a picture of each added plant automatically uploaded via API 
+track sun levels for my plants
 
