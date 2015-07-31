@@ -41,3 +41,24 @@ end
     ) 
 end
 
+Plant.create(
+  plant_name: "BasiL",
+  description: "a leafy, fragrant annual with a bushy appearance",
+  notes: "Remember to pinch out the flower heads as soon as they appear to make sure that the leaves will continue growing.",
+  moisture_threshold: 300,
+  temp_threshold: 50,
+  sensor_id: 11,
+  user_id: 1
+  )
+end 
+
+Plant.create(
+  plant_name: "Mint",
+  description: "a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers.",
+  notes: "Remember to keep the plants in a sunny spot.",
+  moisture_threshold: 300,
+  temp_threshold: 50,
+  sensor_id: 12,
+  user_id: 1
+  )
+end 
