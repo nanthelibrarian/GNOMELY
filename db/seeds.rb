@@ -29,17 +29,17 @@ end
 
 # seed plants
 
-100.times do
-  Plant.create(
-    plant_name: Faker::Lorem.word,
-    description: Faker::Lorem.sentence(10),
-    notes: Faker::Lorem.sentences(3),
-    moisture_threshold: Faker::Number.between(100, 400),
-    temp_threshold: Faker::Number.between(1, 100),
-    sensor_id: Faker::Number.between(1, 10),
-    user_id: Faker::Number.between(1, 21)
-    ) 
-end
+# 100.times do
+#   Plant.create(
+#     plant_name: Faker::Lorem.word,
+#     description: Faker::Lorem.sentence(10),
+#     notes: Faker::Lorem.sentences(3),
+#     moisture_threshold: Faker::Number.between(100, 400),
+#     temp_threshold: Faker::Number.between(1, 100),
+#     sensor_id: Faker::Number.between(1, 10),
+#     user_id: Faker::Number.between(1, 21)
+#     )   
+# end
 
 Plant.create(
   plant_name: "BasiL",
@@ -50,7 +50,6 @@ Plant.create(
   sensor_id: 11,
   user_id: 1
   )
-end 
 
 Plant.create(
   plant_name: "Mint",
@@ -61,4 +60,3 @@ Plant.create(
   sensor_id: 12,
   user_id: 1
   )
-end 

@@ -1,0 +1,10 @@
+<h1>Sending moisture reading</h1>
+<%= form_tag(send_moisture_reading_plant_path(@plant), method: :PATCH) do %>
+<div class="field">
+    <%= label_tag :moisture_threshold %><br />
+    <%= number_field_tag :moisture_threshold, @plant.moisture_threshold%>
+</div>
+<div class="actions">
+  <%= submit_tag %>
+</div>
+<% end %>

@@ -13,23 +13,28 @@ get notification when plants need water
 make notes to plant pages (add comments)
 
 iteration 2 - getting data from sensors
-seed data for 20 or so plants with pictures 
-search for plants
-get notification when moisture drops below a certain level
-add indoor/outdoor location to form 
-add ability to upload user plant pictures
-user profile page
-get email notification when plants need water
+store sensor data - add columns to plant: last reading, last read at
+setup route
+setup controller action
+make dummy page when button clicks, data gets posted to a plant
 
-iteration 3 - API calls and additional data from sensors
-integrate weather app api ?  other api?
+iteration 3 
+seed data for 20 or so plants with pictures 
+add indoor/outdoor location to form 
+add ability to upload user pictures - gravitar or robohash.org
+user profile page
+
+iteration 4 - API calls and additional data from sensors
+change models/associations 
+search for plants
+integrate weather app api ?  other api? - get the weather at the same time as post request from sensor, with geolocation?
 planting/transplanting tips for my plants
 get text notification when plants need water
 UI design
 
 --------- DEMO DAY
 
-iteration 4 - social + stretch functionality
+iteration 5 - social + stretch functionality
 
 track moisture level of a plant
 track temperature for soil

@@ -2,7 +2,12 @@ Rails.application.routes.draw do
   root :to => "user_sessions#new"
   resources :user_sessions
   resources :users, only: [:index, :new, :create]
-  resources :plants
+  resources :plants do 
+    member do 
+      get 'send_moisture_reading'
+      patch 'send_moisture_reading' => 'plants#update_moisture_reading'
+    end
+  end
 
   get 'login' => 'user_sessions#new', :as => :login
   post 'logout' => 'user_sessions#destroy', :as => :logout  
