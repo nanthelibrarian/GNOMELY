@@ -10,16 +10,18 @@ view all my plants
 set threshold for moisture
 set threshold for temperature
 get notification when plants need water
+
+*TO DO
 make notes to plant pages (add comments)
 
 iteration 2 - getting data from sensors
 store sensor data - add columns to plant: last reading, last read at
-setup route
-setup controller action
-make dummy page when button clicks, data gets posted to a plant
+DONE setup route
+DONE setup controller action
+DONE make dummy page when button clicks, data gets posted to a plant
 
 iteration 3 
-seed data for 20 or so plants with pictures 
+DONE *ADD PICTURES seed data for 20 or so plants with pictures 
 add indoor/outdoor location to form 
 add ability to upload user pictures - gravitar or robohash.org
 user profile page

@@ -7,6 +7,7 @@
 
 <div class="plant_info">
   <p>Plant Name: <%= @plant.plant_name %></p>
+  <p>Plant Picture: <%= image_tag @plant.url %>
   <p>Plant Description: <%= @plant.description %></p>
   <p>Moisture Threshold: <%= @plant.moisture_threshold %></p>
   <p>Temperature Threshold: <%= @plant.temp_threshold %></p>

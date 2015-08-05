@@ -42,7 +42,8 @@ end
 # end
 
 Plant.create(
-  plant_name: "BasiL",
+  plant_name: "Basil",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_article/images/basil.jpg",
   description: "a leafy, fragrant annual with a bushy appearance",
   notes: "Remember to pinch out the flower heads as soon as they appear to make sure that the leaves will continue growing.",
   moisture_threshold: 300,
@@ -53,6 +54,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Mint",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/mint.jpg",
   description: "a perennial with very fragrant, toothed leaves and tiny purple, pink, or white flowers.",
   notes: "Remember to keep the plants in a sunny spot.",
   moisture_threshold: 300,
@@ -63,6 +65,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Thyme",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/thyme.jpg",
   description: "a small perennial shrub with lots of branches and light purple to pink flowers",
   notes: "Water normally and remember to trim the plants.",
   moisture_threshold: 200,
@@ -73,6 +76,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Rosemary",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/HerbLore.jpg",
   description: "a perennial evergreen shrub with blue flowers. It is a pungent and distinctive plant with a sweet, resinous flavor.",
   notes: "Be sure to give your plants enough room to grow. Rosemary grows to about 4 feet tall and spreads about 4 feet as well.",
   moisture_threshold: 250,
@@ -83,6 +87,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Tarragon",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/tarragon.jpg",
   description: "a perennial herb with long, light green leaves and tiny greenish or yellowish white flowers.",
   notes: "Plant the transplants in well-drained soil about 2 to 3 feet apart in order to give each plant room to grow. A full-grown plant should cover about 12 inches of soil.",
   moisture_threshold: 300,
@@ -93,6 +98,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Sage",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/sage.jpg",
   description: "a hardy perennial with soft, grayish green leaves.",
   notes: "Be sure to water the young plants regularly until they are fully grown so that they don't dry out.",
   moisture_threshold: 300,
@@ -103,6 +109,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Dill",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/dill.jpg",
   description: "an annual, self-seeding plant with feathery green leaves.",
   notes: "Dill does not grow well when transplanted, so start the seeds fresh in the garden in early summer. Make sure to shelter the plants from strong winds.",
   moisture_threshold: 300,
@@ -113,6 +120,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Coriander",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/cilantro1.jpg",
   description: "a fast-growing, aromatic herb that grows in the cooler weather of spring and fall",
   notes: "Remember to keep the plants in a sunny spot.",
   moisture_threshold: 300,
@@ -123,6 +131,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Parsley",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/parsley.jpg",
   description: "is a biennial plant with bright green, featherlike leaves and is in the same family as dill.",
   notes: "To ensure the best growth, the soil should be around 70ºF.",
   moisture_threshold: 300,
@@ -133,6 +142,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Chives",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/chives.jpg",
   description: "a perennial member of the onion family that sport beautiful purple flowers.",
   notes: "Remember to keep the plants in a sunny spot.",
   moisture_threshold: 300,
@@ -143,6 +153,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Oregano",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/oregano.jpg",
   description: "a perennial with rose-purple or white flowers and a taste reminiscent of thyme.",
   notes: "Oregano doesn't need quite as much water as most herbs. As the amount of watering depends on many variables, just water when the soil feels dry to the touch. Remember that it's better to water thoroughly and less often.",
   moisture_threshold: 100,
@@ -153,6 +164,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Kale",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/kale.jpg",
   description: "a hardy, cool-season green that is part of the cabbage family.",
   notes: "Water the plants regularly but be sure not to overwater them.",
   moisture_threshold: 300,
@@ -163,6 +175,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Lettuce",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/lettuce_rows.jpg",
   description: "a half-hardy vegetable that you can keep growing all season long by planting one small crop at a time.",
   notes: "Lettuce will tell you when it needs water. Just look at it. If the leaves are wilting, sprinkle them anytime—even in the heat of the day—to cool them off and slow down the transpiration rate.",
   moisture_threshold: 200,
@@ -173,6 +186,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Radishes",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/photo_2772.jpg",
   description: "a hardy, cool-season vegetable that can produce many crops each season due to its rapid days to maturity.",
   notes: "Plant consecutively every two weeks or so while weather is still cool for a continuous harvest of radishes.",
   moisture_threshold: 250,
@@ -183,6 +197,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Peas",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/peasimage.jpg",
   description: "a cool-season crop, now coming in three separate varieties to suit your garden and cooking needs.",
   notes: "a cool-season crop, now coming in three separate varieties to suit your garden and cooking needs.",
   moisture_threshold: 300,
@@ -193,6 +208,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Spinach",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/spinach1.jpg",
   description: "super-cold-hardy vegetable is a tender crop that can be planted in very early spring as well as fall and winter.",
   notes: "Spinach can tolerate the cold; it can survive a frost and temps down to 15ºF.",
   moisture_threshold: 300,
@@ -203,6 +219,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Turnips",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/turnip2.jpg",
   description: "biennials usually grown as annuals.",
   notes: "Mulch heavily.",
   moisture_threshold: 300,
@@ -213,6 +230,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Aster",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/aster-flower_0.jpg",
   description: "daisy-like perennials with starry-shaped flower heads.",
   notes: "Cut asters back in winter after the foliage has died.",
   moisture_threshold: 300,
@@ -223,6 +241,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Marigold",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/photo_13712.jpg",
   description: "daisy-like or double, carnation-like flowerheads and are produced singly or in clusters.",
   notes: "Space tall marigolds 2 to 3 feet apart; lower-growing ones about a foot apart.",
   moisture_threshold: 300,
@@ -233,6 +252,7 @@ Plant.create(
 
 Plant.create(
   plant_name: "Pansies",
+  url: "http://www.almanac.com/sites/new.almanac.com/files/imagecache/page_thumbnail/images/photo_3024.jpg",
   description: "hardy annuals whose flowers have 'faces.'",
   notes: "Remember to water your pansies regularly. One of the most common reasons pansies fail is because they are not watered enough, so if your pansies are not doing well, try watering them more.",
   moisture_threshold: 300,
