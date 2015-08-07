@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150805205300) do
+ActiveRecord::Schema.define(version: 20150807183113) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,9 +24,11 @@ ActiveRecord::Schema.define(version: 20150805205300) do
     t.integer  "temp_threshold"
     t.integer  "sensor_id"
     t.integer  "user_id"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "url"
+    t.integer  "moisture_reading"
+    t.datetime "last_moisture_reading_at"
   end
 
   add_index "plants", ["sensor_id"], name: "index_plants_on_sensor_id", using: :btree

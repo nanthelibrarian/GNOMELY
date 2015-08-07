@@ -44,7 +44,7 @@ class PlantsController < ApplicationController
 
   def update_moisture_reading
     @plant = Plant.find(params[:id])
-    if @plant.update_attributes(moisture_threshold)
+    if @plant.update_attributes(moisture_reading)
       redirect_to plant_path(@plant)
     else 
       render :send_moisture_reading
@@ -61,8 +61,8 @@ class PlantsController < ApplicationController
     params.require(:plant).permit(:plant_name, :description, :notes)
   end 
 
-  def moisture_threshold
-    params.permit(:moisture_threshold)
+  def moisture_reading 
+    params.permit(:moisture_reading)
   end
 
 end
