@@ -54,6 +54,7 @@ class PlantsController < ApplicationController
   def send_moisture_reading
     @plant = Plant.find(params[:id])
     @plant.update_attributes(moisture_reading)
+    @plant.update_attributes({last_moisture_reading_at: DateTime.now}) 
   end
 
   private
