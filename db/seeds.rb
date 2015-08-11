@@ -49,7 +49,7 @@ Plant.create(
   moisture_threshold: 300,
   temp_threshold: 50,
   sensor_id: 11,
-  user_id: 1
+  user_id: 3
   )
 
 Plant.create(
@@ -60,7 +60,7 @@ Plant.create(
   moisture_threshold: 300,
   temp_threshold: 50,
   sensor_id: 12,
-  user_id: 1
+  user_id: 3
   )
 
 Plant.create(
@@ -71,7 +71,7 @@ Plant.create(
   moisture_threshold: 200,
   temp_threshold: 50,
   sensor_id: 13,
-  user_id: 1
+  user_id: 3
   )
 
 Plant.create(
@@ -82,7 +82,7 @@ Plant.create(
   moisture_threshold: 250,
   temp_threshold: 50,
   sensor_id: 14,
-  user_id: 1
+  user_id: 3
   )
 
 Plant.create(
