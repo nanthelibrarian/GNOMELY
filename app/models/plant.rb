@@ -10,10 +10,10 @@ class Plant < ActiveRecord::Base
     end
   end
 
-  # def sensor_moisture
-  #   # TODO
-  #   rand(1..200) 
-  # end
+  def sensor_moisture
+    # TODO
+    rand(1..200) 
+  end
 
 end
 
