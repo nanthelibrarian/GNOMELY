@@ -4,12 +4,15 @@
   <title>Gnomely</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= csrf_meta_tags %>
 </head>
-<body>
-<h1>Welcome to Gnomely</h1>
+<body class="<%= controller_name %> <%= action_name %>">
+<div class="logo">
+  <img src="/Gnomely-logo.png" alt="Gnomely">
+</div>
 <div id="nav">
-    <%= link_to "Home", login_path %> |
     <% if current_user %>
     <%= link_to "My Plants", plants_path %> |
     <%= link_to "Logout", :logout, method: :post %> |

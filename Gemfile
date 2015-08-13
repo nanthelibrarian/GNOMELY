@@ -37,6 +37,10 @@ gem 'sorcery'
 gem 'faker'
 gem 'figaro'
 
+gem 'autoprefixer-rails', '~> 5.2.1.1'
+gem 'bourbon'
+gem 'neat', '~> 1.7.2'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
