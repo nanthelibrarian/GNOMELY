@@ -15,7 +15,7 @@
 <div id="nav">
     <% if current_user %>
       <%= link_to "My Plants", plants_path %> |
-      <%= link_to "Logout", :logout, method: :post %>
+      <%= link_to "Logout", :logout %>
     <% else %>
       <%= link_to "Login", login_path %> |
       <%= link_to "Sign Up", signup_path %>
