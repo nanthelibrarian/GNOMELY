@@ -17,10 +17,19 @@
     <%= link_to "My Plants", plants_path %> |
     <%= link_to "Logout", :logout, method: :post %> |
     <% else %>
-    <%= link_to "Sign up", new_user_path %> |
-    <%= link_to "Log in", :login %>
+      <div id="tabs">
+        <ul>
+          <li><a href="/login"><span>Login</span></a></li>
+          <li><a href="/users/new"><span>Sign Up</span></a></li>
+        </ul>
+      </div>
     <% end %>
-  </div>
+</div>
+ 
+<script>
+$( "#tabs" ).tabs();
+</script>
+
   <div>
    <p id="notice"><%= flash[:notice] %></p>
    <p id="alert"><%= flash[:alert] %></p>
