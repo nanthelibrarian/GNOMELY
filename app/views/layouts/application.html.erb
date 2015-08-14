@@ -10,25 +10,17 @@
 </head>
 <body class="<%= controller_name %> <%= action_name %>">
 <div class="logo">
-  <img src="/Gnomely-logo.png" alt="Gnomely">
+  <%= image_tag 'Gnomely-logo.png' %>
 </div>
 <div id="nav">
     <% if current_user %>
-    <%= link_to "My Plants", plants_path %> |
-    <%= link_to "Logout", :logout, method: :post %> |
+      <%= link_to "My Plants", plants_path %> |
+      <%= link_to "Logout", logout_path %>
     <% else %>
-      <div id="tabs">
-        <ul>
-          <li><a href="/login"><span>Login</span></a></li>
-          <li><a href="/users/new"><span>Sign Up</span></a></li>
-        </ul>
-      </div>
+      <%= link_to "Login", login_path %> |
+      <%= link_to "Sign Up", signup_path %>
     <% end %>
 </div>
- 
-<script>
-$( "#tabs" ).tabs();
-</script>
 
   <div>
    <p id="notice"><%= flash[:notice] %></p>
