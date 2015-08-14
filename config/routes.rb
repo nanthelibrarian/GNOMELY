@@ -2,15 +2,17 @@ Rails.application.routes.draw do
   root :to => "user_sessions#new"
   resources :user_sessions
   resources :users, only: [:index, :new, :create]
-  resources :plants do 
-    member do 
+  resources :plants do
+    member do
       get 'send_moisture_reading'
       patch 'send_moisture_reading' => 'plants#update_moisture_reading'
     end
   end
 
   get 'login' => 'user_sessions#new', :as => :login
-  post 'logout' => 'user_sessions#destroy', :as => :logout  
+  get 'signup' => 'users#new', :as => :signup
+  post 'logout' => 'user_sessions#destroy', :as => :logout
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
