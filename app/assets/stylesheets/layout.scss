@@ -14,6 +14,7 @@ body.user_sessions.new {
 
   .field {
     display: block;
+  }
 
   div#login {
     display: block;
@@ -23,10 +24,11 @@ body.user_sessions.new {
   }
 }
 
-div.logo {
-  margin-bottom: 20px;
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+  div.logo {
+    margin-bottom: 20px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
 }
