@@ -7,6 +7,32 @@
   }
 }
 
+div#nav{
+  background: rgba(55, 230, 55, 0.7);
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: $nav-bar-height;
+  color: black;
+  font-size: 1.4rem;
+
+  & > a {
+    margin: 0;
+    padding: 0;
+    line-height: $nav-bar-height;
+    font-size: 1.4rem;
+  }
+
+}
+
+body {
+  padding-top: $nav-bar-height;
+}
+
 body.user_sessions.new {
   background-image: image-url('background1.jpg');
   background-size: 100%;
@@ -32,3 +58,28 @@ body.user_sessions.new {
     margin: 0 auto;
   }
 }
+
+body.plants.index {
+
+    h1 {
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+  }
+
+  & > p {
+    padding: 0;
+    margin-bottom: 10px;
+    left: 0;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+  }
+}
+
+

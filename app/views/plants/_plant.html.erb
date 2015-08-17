@@ -1,1 +1,6 @@
-<p><%= plant.needs_watering? %><%= link_to plant.plant_name, plant %>, <%= plant.description %></p>
+<div class="plant">
+  <h1><%= link_to plant.plant_name, plant %></h1>
+  <p>Sensor Reading:<%= plant.sensor_moisture %></p>
+</div>
+  
+

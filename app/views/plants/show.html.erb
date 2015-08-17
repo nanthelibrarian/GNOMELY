@@ -1,16 +1,14 @@
 <h1><%= @plant.plant_name %></h1>
 
-<%= link_to "Back to All Plants", plants_url %>
 <%= link_to "Edit", edit_plant_path(@plant) %>
 <%= link_to "Delete", @plant, method: "delete", data: {confirm: "Are you sure you want to delete this plant?"} %>
 
 
 <div class="plant_info">
-  <p>Plant Name: <%= @plant.plant_name %></p>
-  <p>Plant Picture: <%= image_tag @plant.url %>
+  <p><%= image_tag @plant.url %></p>
   <p>Plant Description: <%= @plant.description %></p>
   <p>Moisture Threshold: <%= @plant.moisture_threshold %></p>
-  <p>Temperature Threshold: <%= @plant.temp_threshold %></p>
+ <!--  <p>Temperature Threshold: <%= @plant.temp_threshold %></p> -->
   <p>Notes: <%= @plant.notes %></p>
 </div>
 

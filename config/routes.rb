@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => "user_sessions#new"
+  root :to => 'user_sessions#new'
   resources :user_sessions
   resources :users, only: [:index, :new, :create]
   resources :plants do
@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       patch 'send_moisture_reading' => 'plants#update_moisture_reading'
     end
   end
-
+  # get 'pages/homepage'
   get 'login' => 'user_sessions#new', :as => :login
   get 'signup' => 'users#new', :as => :signup
   get 'logout' => 'user_sessions#destroy', :as => :logout
