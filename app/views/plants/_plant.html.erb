@@ -1,6 +1,10 @@
-<div class="plant">
+<div class="plant <%= plant.needs_watering? ? "red": "green"%>">
   <h1><%= link_to plant.plant_name, plant %></h1>
-  <p>Sensor Reading:<%= plant.sensor_moisture %></p>
+  <% if plant.needs_watering?  %>
+    <p>Plant needs watering </p>
+  <% else %>
+    <p>Plant is hydrated</p>
+  <% end %>
 </div>
   
 

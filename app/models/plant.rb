@@ -3,7 +3,7 @@ class Plant < ActiveRecord::Base
 
   def needs_watering? 
     if sensor_moisture > moisture_threshold 
-      user.send_alert_email
+      # user.send_alert_email
       return true  
     else 
       return false  
@@ -12,7 +12,7 @@ class Plant < ActiveRecord::Base
 
   def sensor_moisture
     # TODO
-    rand(1..200) 
+    @moisture ||= rand(100..300) 
   end
 
 end

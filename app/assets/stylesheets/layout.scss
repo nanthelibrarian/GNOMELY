@@ -1,11 +1,4 @@
-.logo {
 
-  height: 40px;
-
-  img{
-    height: 100%
-  }
-}
 
 div#nav{
   background: rgba(55, 230, 55, 0.7);
@@ -33,8 +26,14 @@ body {
   padding-top: $nav-bar-height;
 }
 
-body.user_sessions.new {
+body.pages.homepage {
   background-image: image-url('background1.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body.user_sessions.new {
+  background-image: url('background1.jpg'), url('background2.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
 
@@ -76,10 +75,32 @@ body.plants.index {
 
 
   div.logo {
-    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: white;
+
+    border-radius: 100%;
+    box-shadow: 0 0 50px 10px rgba(0,0,0,0.5);
       img {
         display: block;
+        width: 200px;
         margin: 0 auto;
       }
+  }
+
+  div#tabs {
+    width: 50%;
+    margin: 0 auto;
+    bottom: 20px;
+    box-shadow: 0 0 5px 10px rgba(0,0,0,0.2);
+}
+
+  div.field {
+
+    label {
+      height: 10px;
+    }
   }
 
