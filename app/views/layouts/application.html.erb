@@ -9,12 +9,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller_name %> <%= action_name %>">
-<div id="nav">
-    <% if current_user %>
-      <%= link_to "My Plants", plants_path %> |
-      <%= link_to "Logout", logout_path %>
-    <% end %>
-</div>
 
   <div>
    <p id="notice"><%= flash[:notice] %></p>

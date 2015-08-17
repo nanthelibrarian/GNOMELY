@@ -1,4 +1,8 @@
+<div id="nav">
+      <%= link_to "Back to Plant", @plant %>  |
+      <%= link_to "My Plants", plants_path %> |
+      <%= link_to "Logout", logout_path %>
+</div>
 <h1>Edit Plant</h1>
-<%= link_to "Back to Plant", @plant %>
 
 <%= render 'form' %>

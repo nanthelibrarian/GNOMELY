@@ -1,8 +1,11 @@
+<div id="nav">
+      <%= link_to "Edit", edit_plant_path(@plant) %>  |
+      <%= link_to "Delete", @plant, method: "delete", data: {confirm: "Are you sure you want to delete this plant?"} %> |
+      <%= link_to "My Plants", plants_path %> |
+      <%= link_to "Logout", logout_path %>
+</div>
+
 <h1><%= @plant.plant_name %></h1>
-
-<%= link_to "Edit", edit_plant_path(@plant) %>
-<%= link_to "Delete", @plant, method: "delete", data: {confirm: "Are you sure you want to delete this plant?"} %>
-
 
 <div class="plant_info">
   <p><%= image_tag @plant.url %></p>
