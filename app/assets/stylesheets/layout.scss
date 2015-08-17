@@ -30,6 +30,20 @@ body.pages.homepage {
   background-image: image-url('background1.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
+
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+  }
 }
 
 body.user_sessions.new {
@@ -37,9 +51,8 @@ body.user_sessions.new {
   background-size: 100%;
   background-repeat: no-repeat;
 
-  .field {
-    display: block;
-  }
+}
+
 
   div#login {
     display: block;
@@ -47,7 +60,24 @@ body.user_sessions.new {
     top: 200px;
     margin: 0 auto;
   }
-}
+
+
+  div#tabs {
+   
+    width: 50%;
+    margin: 0 auto;
+    bottom: 20px;
+    box-shadow: 0 0 5px 10px rgba(0,0,0,0.2);
+
+    
+    label {
+      height: 10px;
+    }
+  }
+
+  div.field {
+    display: block;
+  }
 
 body.plants.index {
 
@@ -75,8 +105,8 @@ body.plants.index {
 
 
   div.logo {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
     margin-bottom: 100px;
     background: white;
@@ -90,17 +120,4 @@ body.plants.index {
       }
   }
 
-  div#tabs {
-    width: 50%;
-    margin: 0 auto;
-    bottom: 20px;
-    box-shadow: 0 0 5px 10px rgba(0,0,0,0.2);
-}
-
-  div.field {
-
-    label {
-      height: 10px;
-    }
-  }
 
