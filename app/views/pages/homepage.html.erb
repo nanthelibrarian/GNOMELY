@@ -2,19 +2,4 @@
 <div class="logo">
   <%= image_tag 'Gnomely-logo.png' %>
 </div>
-<div id="tabs">
-    <ul>
-      <li><a href="#login"><span>Login</span></a></li>
-      <li><a href="#signup"><span>Sign Up</span></a></li>
-    </ul>
-    <div id="login">
-      <%= render :partial => 'user_sessions/form' %>
-    </div>
-    <div id="signup">
-      <%= render :partial => 'users/form' %>
-    </div>
- </div>
 
-  <script>
-    $( "#tabs" ).tabs();
-  </script>
