@@ -4,14 +4,18 @@
       <%= link_to "My Plants", plants_path %> |
       <%= link_to "Logout", logout_path %>
 </div>
+<div class="background"></div>
 
 <h1><%= @plant.plant_name %></h1>
-
+<div id="plant_image">
+  <%= image_tag @plant.url %>
+</div>  
 <div class="plant_info">
-  <p><%= image_tag @plant.url %></p>
-  <p>Plant Description: <%= @plant.description %></p>
-  <p>Moisture Threshold: <%= @plant.moisture_threshold %></p>
- <!--  <p>Temperature Threshold: <%= @plant.temp_threshold %></p> -->
-  <p>Notes: <%= @plant.notes %></p>
+  <h2>Plant Description</h2>
+  <p><%= @plant.description %></p>
+  <h2>Moisture Threshold</h2>
+  <p><%= @plant.moisture_threshold %></p>
+  <h2>Notes</h2>
+  <p><%= @plant.notes %></p>
 </div>
 

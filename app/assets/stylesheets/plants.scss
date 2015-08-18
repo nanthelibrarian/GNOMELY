@@ -36,3 +36,26 @@
  .green{
   background-color: lighten(green, 20%);
  }
+
+  div#plant_image {
+    
+      img {
+        display: block;
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 40px;
+        position: relative;
+        box-shadow: 0 0 50px 10px #298f10;
+      }
+  }
+ .plant_info {
+  padding: 0;
+  background-color: transparent;
+  display: block;
+  margin-top: 40px;
+  margin-left: 20px;
+  position: relative;
+  width: 50%;
+
+
+ }

@@ -26,6 +26,43 @@ body {
   padding-top: $nav-bar-height;
 }
 
+h1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    line-height: $base-line-height;
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+  }
+
+h2 {
+  font: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $blue;
+  padding: 0;
+}  
+
+p {
+    line-height: 30px;
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+
+   label {
+      height: 10px;
+    }
+  
+}
 body.pages.homepage {
   background-image: image-url('background1.jpg');
   background-size: 100%;
@@ -91,20 +128,7 @@ body.user_sessions.new {
     
   }
 
-body.plants.index {
 
-    h1 {
-    height: 100px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    display: block;
-    position: relative;
-    top: 30px;
-    font-size: 40px;
-  }
-
-}
 
 
 
