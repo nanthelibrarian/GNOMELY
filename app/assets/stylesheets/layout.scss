@@ -12,8 +12,24 @@ div#nav{
   height: $nav-bar-height;
   color: black;
   font-size: 1.4rem;
+  
 
-  & > a {
+  & > a { 
+    color: white;
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($medium-gray, 15%);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+      
     margin: 0;
     padding: 0;
     line-height: $nav-bar-height;
@@ -41,7 +57,7 @@ h1 {
 
 h2 {
   font: $base-font-family;
-  font-size: $base-font-size;
+  font-size: 24px;
   line-height: $base-line-height;
   color: $blue;
   padding: 0;
@@ -53,6 +69,26 @@ p {
     text-align: left;
     font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($blue, 15%);
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+    font-size: rem(30);
+    color: $blue;
+    line-height: 1 rem;
+    margin: 0 auto;
+  }
 
 form {
   width: 50%;

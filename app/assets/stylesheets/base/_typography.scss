@@ -8,10 +8,10 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
+span,
 h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
@@ -23,22 +23,22 @@ p {
   margin: 0 0 $small-spacing;
 }
 
-a {
-  color: $action-color;
-  text-decoration: none;
-  transition: color 0.1s linear;
+// a {
+//   color: white;
+//   text-decoration: none;
+//   transition: color 0.1s linear;
 
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken($action-color, 15%);
-  }
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     color: darken($medium-gray, 15%);
+//   }
 
-  &:active,
-  &:focus {
-    outline: none;
-  }
-}
+//   &:active,
+//   &:focus {
+//     outline: none;
+//   }
+// }
 
 hr {
   border-bottom: $base-border;
