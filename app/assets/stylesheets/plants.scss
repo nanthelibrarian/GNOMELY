@@ -6,7 +6,7 @@
 
 .plant {
     padding: 0 1rem;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     margin-bottom: 1rem;
 
@@ -29,14 +29,10 @@
 }
 
  .red{
-  background-color: red;
+  background-color: lighten(red, 20%);
  }
 
- .yellow{
-  background-color: yellow;
-
- }
 
  .green{
-  background-color: green;
+  background-color: lighten(green, 20%);
  }
